@@ -31,7 +31,7 @@ int main()
 			{
 				int action;
 				system("cls");
-				cout << "Ââîä âðó÷íóþ èëè èç ôàéëà?\n1.Âðó÷íóþ 2.Èç ôàéëà\n" << endl;
+				cout << "Ã‚Ã¢Ã®Ã¤ Ã¢Ã°Ã³Ã·Ã­Ã³Ã¾ Ã¨Ã«Ã¨ Ã¨Ã§ Ã´Ã Ã©Ã«Ã ?\n1.Ã‚Ã°Ã³Ã·Ã­Ã³Ã¾ 2.ÃˆÃ§ Ã´Ã Ã©Ã«Ã \n" << endl;
 				cin >> action;
 				if (action == 1)
 				{
@@ -45,7 +45,7 @@ int main()
 				{
 					while (action > 2 || action < 1)
 					{
-						cout << "Îøèáêà ââîäà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !\n";
 						cin >> action;
 					}
 					if (action == 1)
@@ -88,32 +88,32 @@ int main()
 			if (meniu == 8)
 			{
 				system("cls");
-				cout << " ÌÅÍÞ:\n";
-				cout << "  1.Ââîä/çàãðóçêà\n";
-				cout << "  2.Äîáàâëåíèå äàííûõ\n";
-				cout << "  3.Èçìåíåíèå äàííûõ\n";
-				cout << "  4.Óäàëåíèå äàííûõ\n";
-				cout << "  5.Âûâîä\n";
-				cout << "  6.Ñîõðàíåíèå\n";   
-				cout << "  7.Âûõîä\n\n";
+				cout << " ÃŒÃ…ÃÃž:\n";
+				cout << "  1.Ã‚Ã¢Ã®Ã¤/Ã§Ã Ã£Ã°Ã³Ã§ÃªÃ \n";
+				cout << "  2.Ã„Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¥ Ã¤Ã Ã­Ã­Ã»Ãµ\n";
+				cout << "  3.ÃˆÃ§Ã¬Ã¥Ã­Ã¥Ã­Ã¨Ã¥ Ã¤Ã Ã­Ã­Ã»Ãµ\n";
+				cout << "  4.Ã“Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¥ Ã¤Ã Ã­Ã­Ã»Ãµ\n";
+				cout << "  5.Ã‚Ã»Ã¢Ã®Ã¤\n";
+				cout << "  6.Ã‘Ã®ÃµÃ°Ã Ã­Ã¥Ã­Ã¨Ã¥\n";   
+				cout << "  7.Ã‚Ã»ÃµÃ®Ã¤\n\n";
 			}
 			if (meniu == 7)
 			{
 				system("cls");
 				if (dataCleaning())
-					cout << "Äàííûå èç áóôåðà î÷èùåíûé!" << endl;
+					cout << "Ã„Ã Ã­Ã­Ã»Ã¥ Ã¨Ã§ Ã¡Ã³Ã´Ã¥Ã°Ã  Ã®Ã·Ã¨Ã¹Ã¥Ã­Ã»Ã©!" << endl;
 				else
-					cout << "Äàííûå èç áóôåðà ÍÅ î÷èùåíû!!!" << endl;
-				cout << "Ðàáîòà çàâåðøåíà." << endl;
+					cout << "Ã„Ã Ã­Ã­Ã»Ã¥ Ã¨Ã§ Ã¡Ã³Ã´Ã¥Ã°Ã  ÃÃ… Ã®Ã·Ã¨Ã¹Ã¥Ã­Ã»!!!" << endl;
+				cout << "ÃÃ Ã¡Ã®Ã²Ã  Ã§Ã Ã¢Ã¥Ã°Ã¸Ã¥Ã­Ã ." << endl;
 				break;
 			}
 		}
 		else
 		{
-			cout << "Îøèáêà ââîäà! \n\n";
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã ! \n\n";
 				return 0;
 		}
-		cout << "Ìåíþ: ";
+		cout << "ÃŒÃ¥Ã­Ã¾: ";
 		cin >> meniu;
 	}
 	system("pause");
@@ -125,8 +125,8 @@ void dataSet()
 	if (!fileVoid("Buffer.txt"))
 	{
 		int a;
-		cout << "Áàçà äàííûõ óæå çàãðóæåíà!" << endl;
-		cout << "1.Ââåñòè äðóãóþ ÁÄ 2.Âûéòè" << endl;
+		cout << "ÃÃ Ã§Ã  Ã¤Ã Ã­Ã­Ã»Ãµ Ã³Ã¦Ã¥ Ã§Ã Ã£Ã°Ã³Ã¦Ã¥Ã­Ã !" << endl;
+		cout << "1.Ã‚Ã¢Ã¥Ã±Ã²Ã¨ Ã¤Ã°Ã³Ã£Ã³Ã¾ ÃÃ„ 2.Ã‚Ã»Ã©Ã²Ã¨" << endl;
 		cin >> a;
 		if (a == 1)
 		{
@@ -143,7 +143,7 @@ void dataSet()
 		{
 			while (a > 2 || a < 1)
 			{
-				cout << "Îøèáêà ââîäà!";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 				cin >> a;
 			}
 			if (a == 2)
@@ -158,7 +158,7 @@ void dataSet()
 		}
 	}
 	int n;
-	cout << "Ââåäèòå êîëëè÷åñòâî èíñòèòóòîâ: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã®Ã¢: ";
 	cin >> n;
 	ofstream record("Buffer.txt", ios::app);
 	if (record)
@@ -172,23 +172,23 @@ void dataSet()
 			if (i < n - 1)
 			{
 				string inst;
-				cout << "Ââåäèòå íàçâàíèå èíñòèòóòà: ";
+				cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 				while (cin.get() != '\n');
 				getline(cin, inst);
 				record << inst << endl;
 				int m;
-				cout << "Ñêîëüêî êàôåäð â ýòîì èíñòèòóòå? ";
+				cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® ÃªÃ Ã´Ã¥Ã¤Ã° Ã¢ Ã½Ã²Ã®Ã¬ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã¥? ";
 				cin >> m;
 				record << m << endl;
 				for (int i = 0; i < m; i++)
 				{
 					int m;
 					string kaf;
-					cout << "Ââåäèòå íàçâàíèå êàôåäðû: ";
+					cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 					while (cin.get() != '\n');
 					getline(cin, kaf);
 					record << kaf << endl;
-					cout << "Ñêîëüêî ãðóïï â ýòîé êàôåäðå? ";
+					cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã£Ã°Ã³Ã¯Ã¯ Ã¢ Ã½Ã²Ã®Ã© ÃªÃ Ã´Ã¥Ã¤Ã°Ã¥? ";
 					cin >> m;
 					record << m << endl;
 					for (int i = 0; i < m; i++)
@@ -196,17 +196,17 @@ void dataSet()
 						int a;
 						int m;
 						string grupp;
-						cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+						cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						while (cin.get() != '\n');
 						getline(cin, grupp);
 						record << grupp << endl;
-						cout << "Ñêîëüêî ñòóäåíòîâ â ýòîé ãðóïïå? ";
+						cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã¥? ";
 						cin >> m;
-						cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ñòóäåíòîâ ýòîé ãðóïïû: ";
+						cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						cin >> a;
 						if (a == 0)
 						{
-							cout << "Îøèáêà ââîäà!";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 							system("pause");
 							record.clear();
 							record.close();
@@ -220,11 +220,11 @@ void dataSet()
 						{
 							int a;
 							string pred;
-							cout << "Ââåäèòå íàçâàíèå ïðåäìåòà: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã : ";
 							while (cin.get() != '\n');
 							getline(cin, pred);
 							predm[i] = pred;
-							cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+							cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 							cin >> a;
 							a--;
 							kurs[i] = a;
@@ -232,21 +232,21 @@ void dataSet()
 						for (int i = 0; i < m; i++)
 						{
 							string fio;
-							cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 							while (cin.get() != '\n');
 							getline(cin, fio);
 							record << fio << endl;
 							for (int i = 0; i < a; i++)
 							{
 								int ocen;
-								cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+								cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 								record << predm[i] << endl;
 								cin >> ocen;
 								record << ocen << endl;
 								if (kurs[i] == 0)
 								{
 									int ocen;
-									cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+									cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 									cin >> ocen;
 									record << ocen << endl;
 								}
@@ -261,19 +261,19 @@ void dataSet()
 					}
 				}
 				cout << "_________________________________________________________________________________\n";
-				cout << "\nÂû óñïåøíî äîàáèâèëè äàííûå ïî èíñòèòóòó!" << endl;
+				cout << "\nÃ‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã Ã¡Ã¨Ã¢Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥ Ã¯Ã® Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã³!" << endl;
 				system("Pause");
 				system("cls");
 			}
 			else
 			{
 			string inst;
-			cout << "Ââåäèòå íàçâàíèå èíñòèòóòà: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 			while (cin.get() != '\n');
 			getline(cin, inst);
 			record << inst << endl;
 			int m;
-			cout << "Ñêîëüêî êàôåäð â ýòîì èíñòèòóòå? ";
+			cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® ÃªÃ Ã´Ã¥Ã¤Ã° Ã¢ Ã½Ã²Ã®Ã¬ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã¥? ";
 			cin >> m;
 			if (m == 0)
 				record << m;
@@ -285,11 +285,11 @@ void dataSet()
 				{
 					int m;
 					string kaf;
-					cout << "Ââåäèòå íàçâàíèå êàôåäðû: ";
+					cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 					while (cin.get() != '\n');
 					getline(cin, kaf);
 					record << kaf << endl;
-					cout << "Ñêîëüêî ãðóïï â ýòîé êàôåäðå? ";
+					cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã£Ã°Ã³Ã¯Ã¯ Ã¢ Ã½Ã²Ã®Ã© ÃªÃ Ã´Ã¥Ã¤Ã°Ã¥? ";
 					cin >> m;
 					record << m << endl;
 					for (int i = 0; i < m; i++)
@@ -297,17 +297,17 @@ void dataSet()
 						int a;
 						int m;
 						string grupp;
-						cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+						cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						while (cin.get() != '\n');
 						getline(cin, grupp);
 						record << grupp << endl;
-						cout << "Ñêîëüêî ñòóäåíòîâ â ýòîé ãðóïïå? ";
+						cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã¥? ";
 						cin >> m;
-						cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ñòóäåíòîâ ýòîé ãðóïïû: ";
+						cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						cin >> a;
 						if (a == 0)
 						{
-							cout << "Îøèáêà ââîäà!";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 							system("pause");
 							record.clear();
 							record.close();
@@ -321,11 +321,11 @@ void dataSet()
 						{
 							int a;
 							string pred;
-							cout << "Ââåäèòå íàçâàíèå ïðåäìåòîâ: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢: ";
 							while (cin.get() != '\n');
 							getline(cin, pred);
 							predm[i] = pred;
-							cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+							cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 							cin >> a;
 							a--;
 							kurs[i] = a;
@@ -333,21 +333,21 @@ void dataSet()
 						for (int i = 0; i < m; i++)
 						{
 							string fio;
-							cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 							while (cin.get() != '\n');
 							getline(cin, fio);
 							record << fio << endl;
 							for (int i = 0; i < a; i++)
 							{
 								int ocen;
-								cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+								cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 								record << predm[i] << endl;
 								cin >> ocen;
 								record << ocen << endl;
 								if (kurs[i] == 0)
 								{
 									int ocen;
-									cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+									cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 									cin >> ocen;
 									record << ocen << endl;
 								}
@@ -365,11 +365,11 @@ void dataSet()
 				{
 					int m;
 					string kaf;
-					cout << "Ââåäèòå íàçâàíèå êàôåäðû: ";
+					cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 					while (cin.get() != '\n');
 					getline(cin, kaf);
 					record << kaf << endl;
-					cout << "Ñêîëüêî ãðóïï â ýòîé êàôåäðå? ";
+					cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã£Ã°Ã³Ã¯Ã¯ Ã¢ Ã½Ã²Ã®Ã© ÃªÃ Ã´Ã¥Ã¤Ã°Ã¥? ";
 					cin >> m;
 					if (m == 0)
 						record << m;
@@ -382,17 +382,17 @@ void dataSet()
 							int a;
 							int m;
 							string grupp;
-							cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 							while (cin.get() != '\n');
 							getline(cin, grupp);
 							record << grupp << endl;
-							cout << "Ñêîëüêî ñòóäåíòîâ â ýòîé ãðóïïå? ";
+							cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã¥? ";
 							cin >> m;
-							cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ñòóäåíòîâ ýòîé ãðóïïû: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 							cin >> a;
 							if (a == 0)
 							{
-								cout << "Îøèáêà ââîäà!";
+								cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 								system("pause");
 								record.clear();
 								record.close();
@@ -406,11 +406,11 @@ void dataSet()
 							{
 								int a;
 								string pred;
-								cout << "Ââåäèòå íàçâàíèå ïðåäìåòîâ: ";
+								cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢: ";
 								while (cin.get() != '\n');
 								getline(cin, pred);
 								predm[i] = pred;
-								cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+								cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 								cin >> a;
 								a--;
 								kurs[i] = a;
@@ -418,21 +418,21 @@ void dataSet()
 							for (int i = 0; i < m; i++)
 							{
 								string fio;
-								cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+								cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 								while (cin.get() != '\n');
 								getline(cin, fio);
 								record << fio << endl;
 								for (int i = 0; i < a; i++)
 								{
 									int ocen;
-									cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+									cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 									record << predm[i] << endl;
 									cin >> ocen;
 									record << ocen << endl;
 									if (kurs[i] == 0)
 									{
 										int ocen;
-										cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+										cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 										cin >> ocen;
 										record << ocen << endl;
 									}
@@ -450,17 +450,17 @@ void dataSet()
 							int a;
 							int m;
 							string grupp;
-							cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 							while (cin.get() != '\n');
 							getline(cin, grupp);
 							record << grupp << endl;
-							cout << "Ñêîëüêî ñòóäåíòîâ â ýòîé ãðóïïå? ";
+							cout << "Ã‘ÃªÃ®Ã«Ã¼ÃªÃ® Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã¥? ";
 							cin >> m;
-							cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ñòóäåíòîâ ýòîé ãðóïïû: ";
+							cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã½Ã²Ã®Ã© Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 							cin >> a;
 							if (a == 0)
 							{
-								cout << "Îøèáêà ââîäà!";
+								cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 								system("pause");
 								record.clear();
 								record.close();
@@ -482,11 +482,11 @@ void dataSet()
 							{
 								int a;
 								string pred;
-								cout << "Ââåäèòå íàçâàíèå ïðåäìåòîâ: ";
+								cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢: ";
 								while (cin.get() != '\n');
 								getline(cin, pred);
 								predm[i] = pred;
-								cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+								cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 								cin >> a;
 								a--;
 								kurs[i] = a;
@@ -496,21 +496,21 @@ void dataSet()
 								if (i < m - 1)
 								{
 									string fio;
-									cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+									cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 									while (cin.get() != '\n');
 									getline(cin, fio);
 									record << fio << endl;
 									for (int i = 0; i < a; i++)
 									{
 										int ocen;
-										cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+										cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 										record << predm[i] << endl;
 										cin >> ocen;
 										record << ocen << endl;
 										if (kurs[i] == 0)
 										{
 											int ocen;
-											cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+											cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 											cin >> ocen;
 											record << ocen << endl;
 										}
@@ -523,7 +523,7 @@ void dataSet()
 								else
 								{
 									string fio;
-									cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+									cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 									while (cin.get() != '\n');
 									getline(cin, fio);
 									record << fio << endl;
@@ -532,14 +532,14 @@ void dataSet()
 										if (i < a - 1)
 										{
 											int ocen;
-											cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+											cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 											record << predm[i] << endl;
 											cin >> ocen;
 											record << ocen << endl;
 											if (kurs[i] == 0)
 											{
 												int ocen;
-												cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+												cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 												cin >> ocen;
 												record << ocen << endl;
 											}
@@ -551,14 +551,14 @@ void dataSet()
 										else
 										{
 											int ocen;
-											cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+											cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 											record << predm[i] << endl;
 											cin >> ocen;
 											record << ocen << endl;
 											if (kurs[i] == 0)
 											{
 												int ocen;
-												cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+												cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 												cin >> ocen;
 												record << ocen;
 											}
@@ -575,18 +575,18 @@ void dataSet()
 				}
 			}
 			cout << "_________________________________________________________________________________\n";
-			cout << "\nÂû óñïåøíî äîàáèâèëè äàííûå ïî èíñòèòóòó!" << endl;
+			cout << "\nÃ‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã Ã¡Ã¨Ã¢Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥ Ã¯Ã® Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã³!" << endl;
 			system("Pause");
 			system("cls");
 			}
 		}
-		cout << "Âû óñïåøíî ñîçäàëè ÁÄ!" << endl;
+		cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã±Ã®Ã§Ã¤Ã Ã«Ã¨ ÃÃ„!" << endl;
 		system("Pause");
 		record.close();
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ ôàéëà!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !" << endl;
 		system("pause");
 	}
 }
@@ -595,7 +595,7 @@ void Print()
 	system("cls");
 	if (fileVoid("Buffer.txt"))
 	{
-		cout << "Áóôåð ïóñò!" << endl;
+		cout << "ÃÃ³Ã´Ã¥Ã° Ã¯Ã³Ã±Ã²!" << endl;
 		return void();
 	}
 	ifstream reading("Buffer.txt");
@@ -606,53 +606,53 @@ void Print()
 		reading >> p;
 		reading.ignore();
 		cout << " -----------------------------------------------------------------------------------------------------------------" << endl;
-		cout << "| Êîëè÷åñòâî èíñòèòóòîâ: " << p <<"                                                                                        |"<< endl;
+		cout << "| ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã®Ã¢: " << p <<"                                                                                        |"<< endl;
 		cout << " -----------------------------------------------------------------------------------------------------------------\n" << endl;
 		for (int i = 0; i < p; i++)
 		{
 			cout << "__________________________________________________________________________________________________________________________________" << endl;
 			int n;
-			cout << "Äàííûå î èíñòèòóòå ¹" << i + 1 << endl;
+			cout << "Ã„Ã Ã­Ã­Ã»Ã¥ Ã® Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã¥ Â¹" << i + 1 << endl;
 			getline(reading, nazv);
-			cout << "Íàçâàíèå èíñòèòóòà: " <<  nazv << endl;
+			cout << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : " <<  nazv << endl;
 			reading >> n;
 			reading.ignore();
-			cout << "Êîëè÷åòñâî êàôåäð â èíñòèòóòå " << nazv << ": "<<n<<endl;
+			cout << "ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã²Ã±Ã¢Ã® ÃªÃ Ã´Ã¥Ã¤Ã° Ã¢ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã¥ " << nazv << ": "<<n<<endl;
 			for (int i = 0; i < n; i++)
 			{
 				cout << "\t=========================================================================================================================" << endl;
 				int l;
-				cout << "\tÄàííûå î êàôåäðå ¹" << i + 1 << endl;
+				cout << "\tÃ„Ã Ã­Ã­Ã»Ã¥ Ã® ÃªÃ Ã´Ã¥Ã¤Ã°Ã¥ Â¹" << i + 1 << endl;
 				getline(reading, nazv);
-				cout << "\tÍàçâàíèå êàôåäðû: " << nazv << endl;
+				cout << "\tÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: " << nazv << endl;
 				reading >> l;
 				reading.ignore();
-				cout << "\tÊîëè÷åòñâî ãðóïï â êàôåäðå " << nazv << ": " << l << endl;
+				cout << "\tÃŠÃ®Ã«Ã¨Ã·Ã¥Ã²Ã±Ã¢Ã® Ã£Ã°Ã³Ã¯Ã¯ Ã¢ ÃªÃ Ã´Ã¥Ã¤Ã°Ã¥ " << nazv << ": " << l << endl;
 				for (int i = 0; i < l; i++)
 				{
 					int k;
 					int m;
 					cout << "\t\t----------------------------------------------------------------------------------------------------------------" << endl;
-					cout << "\t\tÄàííûå î ãðóïïå ¹" << i + 1 << endl;
+					cout << "\t\tÃ„Ã Ã­Ã­Ã»Ã¥ Ã® Ã£Ã°Ã³Ã¯Ã¯Ã¥ Â¹" << i + 1 << endl;
 					getline(reading, nazv);
-					cout << "\t\tÍàçâàíèå ãðóïïû: " << nazv << endl;
+					cout << "\t\tÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: " << nazv << endl;
 					reading >> k;
-					cout << "\t\tÊîëè÷åòñâî ñòóäåíòîâ â ãðóïïå " << nazv << ": " << k << endl<<endl;
+					cout << "\t\tÃŠÃ®Ã«Ã¨Ã·Ã¥Ã²Ã±Ã¢Ã® Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢ Ã¢ Ã£Ã°Ã³Ã¯Ã¯Ã¥ " << nazv << ": " << k << endl<<endl;
 					reading >> m;
 					reading.ignore();
 					for (int i = 0; i < k; i++)
 					{
 						cout << "\t\t\t-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-" << endl;
-						cout << "\t\t\t+ Äàííûå î ñòóäåíòå ¹" << i + 1;
+						cout << "\t\t\t+ Ã„Ã Ã­Ã­Ã»Ã¥ Ã® Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã¥ Â¹" << i + 1;
 						if (i>9)
 							cout<< "                                                                                 +" << endl;
 						else
 							cout<< "                                                                                +" << endl;
 						getline(reading, nazv);
-						cout << "\t\t\t+  Èìÿ ñòóäåíòà: " << nazv;
+						cout << "\t\t\t+  ÃˆÃ¬Ã¿ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : " << nazv;
 						space(nazv, 85);
 						cout << "+" << endl;
-						cout << "\t\t\t+  Îöåíêè ñòóäåíòà " << "                                                                                   +" << endl;
+						cout << "\t\t\t+  ÃŽÃ¶Ã¥Ã­ÃªÃ¨ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã  " << "                                                                                   +" << endl;
 						for (int i = 0; i < m; i++)
 						{
 							int ocen;
@@ -664,12 +664,12 @@ void Print()
 							if (ocen == 0)
 							{
 								space(nazv,45);
-								cout << "|  "  << "\tÓ ýòîãî ïðåäìåòà íåò êóðñîâîé ðàáîòû          +" << endl;
+								cout << "|  "  << "\tÃ“ Ã½Ã²Ã®Ã£Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã  Ã­Ã¥Ã² ÃªÃ³Ã°Ã±Ã®Ã¢Ã®Ã© Ã°Ã Ã¡Ã®Ã²Ã»          +" << endl;
 							}
 							else
 							{
 								space(nazv,45);
-								cout << "|  " << "\tÎöåíêà çà êóðñîâóþ ðàáîòó ïî ýòîìó ïðåäìåòó:" << ocen <<" +"<<endl;
+								cout << "|  " << "\tÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã°Ã Ã¡Ã®Ã²Ã³ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³:" << ocen <<" +"<<endl;
 							}
 						}
 						if (i+1==k)
@@ -687,7 +687,7 @@ void Print()
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ ôàéëà!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !" << endl;
 		system("pause");
 	}
 	reading.close();
@@ -703,13 +703,13 @@ void dataChange()
 	system("cls");
 	if (fileVoid("Buffer.txt"))
 	{
-		cout << "Áóôåð ïóñò!" << endl;
+		cout << "ÃÃ³Ã´Ã¥Ã° Ã¯Ã³Ã±Ã²!" << endl;
 		system("pause");
 		return void(); 
 	}
 	if (AmountOfData() == 0)
 	{
-		cout << "Äàííûõ äëÿ èçìåíåíèÿ áîëüøå íåò!" << endl;
+		cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã¨Ã§Ã¬Ã¥Ã­Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 		system("pause");
 		return void();
 	}
@@ -757,7 +757,7 @@ void dataChange()
 			}
 		}
 		int a;
-		cout << "\n1.Èçìåíèòü 2.Äàëåå\n";
+		cout << "\n1.ÃˆÃ§Ã¬Ã¥Ã­Ã¨Ã²Ã¼ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 		cin >> a;
 		if (a == 1)
 		{
@@ -775,7 +775,7 @@ void dataChange()
 					reading >> n;
 					reading.ignore();
 					int _n;
-					cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå èçìåíèòü: ";
+					cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã²Ã¼: ";
 					cin >> _n;
 					_n--;
 					system("cls");
@@ -995,7 +995,7 @@ void dataChange()
 							}
 							else
 							{
-								cout << "Ââåäèòå íîâîå íàçâàíèå èíñòèòóòà" << endl;
+								cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã " << endl;
 								if (i < n - 1)
 								{
 									int n;
@@ -1208,12 +1208,12 @@ void dataChange()
 								}
 							}
 						}
-						cout << "Âû óñïåøíî èçìåíèëè äàííûå!" << endl;
+						cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 						system("pause");
 					}
 					else
 					{
-						cout << "Ýëåìåíòà ñ òàêèì íîìåðîì íå ñóùåñòâóåò!" << endl;
+						cout << "ÃÃ«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã± Ã²Ã ÃªÃ¨Ã¬ Ã­Ã®Ã¬Ã¥Ã°Ã®Ã¬ Ã­Ã¥ Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã³Ã¥Ã²!" << endl;
 						system("Pause");
 						return void();
 					}
@@ -1223,13 +1223,13 @@ void dataChange()
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 			}
 			else
 			{
-				cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 				system("Pause");
 			}
 		}
@@ -1240,7 +1240,7 @@ void dataChange()
 			ifstream reading("Buffer.txt");
 			if (reading)
 			{
-				cout << "Âûáåðèòå íîìåð èíñòèòóòà: ";
+				cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 				cin >> b;
 				system("cls");
 				string nazv;
@@ -1255,7 +1255,7 @@ void dataChange()
 					reading >> n;
 					if ((n == 0) && (j+1==b))
 					{
-						cout << "Äàííûõ äëÿ èçìåíåíèÿ áîëüøå íåò!" << endl;
+						cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã¨Ã§Ã¬Ã¥Ã­Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 						system("pause");
 						reading.close();
 						return void();
@@ -1294,10 +1294,10 @@ void dataChange()
 			}
 			else
 			{
-				cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 				system("Pause");
 			}
-			cout << "\n1.Èçìåíèòü 2.Äàëåå\n";
+			cout << "\n1.ÃˆÃ§Ã¬Ã¥Ã­Ã¨Ã²Ã¼ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 			cin >> a;
 			if (a == 1)
 			{
@@ -1315,7 +1315,7 @@ void dataChange()
 						reading >> n;
 						reading.ignore();
 						int c;
-						cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå èçìåíèòü: ";
+						cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã²Ã¼: ";
 						cin >> c;
 						system("cls");
 						record << n << endl;
@@ -1334,7 +1334,7 @@ void dataChange()
 									int n;
 									if ((j + 1 == b) && (r + 1 == c))
 									{
-										cout << "Ââåäèòå íîâîå íàçâàíèå êàôåäðû: ";
+										cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 										while (cin.get() != '\n');
 										getline(cin, nazv);
 										record << nazv << endl;
@@ -1395,7 +1395,7 @@ void dataChange()
 										int n;
 										if ((j + 1 == b) && (r + 1 == c))
 										{
-											cout << "Ââåäèòå íîâîå íàçâàíèå êàôåäðû: ";
+											cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 											while (cin.get() != '\n');
 											getline(cin, nazv);
 											record << nazv << endl;
@@ -1442,7 +1442,7 @@ void dataChange()
 										int n;
 										if ((j + 1 == b) && (r + 1 == c))
 										{
-											cout << "Ââåäèòå íîâîå íàçâàíèå êàôåäðû: ";
+											cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 											while (cin.get() != '\n');
 											getline(cin, nazv);
 											record << nazv << endl;
@@ -1561,7 +1561,7 @@ void dataChange()
 								}
 							}
 						}
-						cout << "Âû óñïåøíî èçìåíèëè äàííûå!" << endl;
+						cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 						system("pause");
 						reading.close();
 						record.close();
@@ -1569,13 +1569,13 @@ void dataChange()
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 			}
@@ -1586,7 +1586,7 @@ void dataChange()
 				ifstream reading("Buffer.txt");
 				if (reading)
 				{
-					cout << "Âûáåðèòå íîìåð êàôåäðû: ";
+					cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 					cin >> c;
 					system("cls");
 					string nazv;
@@ -1607,7 +1607,7 @@ void dataChange()
 							reading >> n;
 							if ((n == 0) && (j + 1 == b) && (r + 1==c))
 							{
-								cout << "Äàííûõ äëÿ èçìåíåíèÿ áîëüøå íåò!" << endl;
+								cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã¨Ã§Ã¬Ã¥Ã­Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 								system("pause");
 								reading.close();
 								return void();
@@ -1640,10 +1640,10 @@ void dataChange()
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
-				cout << "\n1.Èçìåíèòü 2.Äàëåå\n";
+				cout << "\n1.ÃˆÃ§Ã¬Ã¥Ã­Ã¨Ã²Ã¼ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 				cin >> a;
 				if (a == 1)
 				{
@@ -1661,7 +1661,7 @@ void dataChange()
 							reading >> n;
 							reading.ignore();
 							int d;
-							cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå èçìåíèòü: ";
+							cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã²Ã¼: ";
 							cin >> d;
 							system("cls");
 							record << n << endl;
@@ -1689,7 +1689,7 @@ void dataChange()
 											int m;
 											if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d))
 											{
-												cout << "Ââåäèòå íîâîå íàçâàíèå ãðóïïû: ";
+												cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 												while (cin.get() != '\n');
 												getline(cin, nazv);
 												record << nazv << endl;
@@ -1750,7 +1750,7 @@ void dataChange()
 												int m;
 												if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d))
 												{
-													cout << "Ââåäèòå íîâîå íàçâàíèå ãðóïïû: ";
+													cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 													while (cin.get() != '\n');
 													getline(cin, nazv);
 													record << nazv << endl;
@@ -1802,7 +1802,7 @@ void dataChange()
 													int m;
 													if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d))
 													{
-														cout << "Ââåäèòå íîâîå íàçâàíèå ãðóïïû: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 														while (cin.get() != '\n');
 														getline(cin, nazv);
 														record << nazv << endl;
@@ -1840,7 +1840,7 @@ void dataChange()
 													int m;
 													if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d))
 													{
-														cout << "Ââåäèòå íîâîå íàçâàíèå ãðóïïû: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 														while (cin.get() != '\n');
 														getline(cin, nazv);
 														record << nazv << endl;
@@ -1918,7 +1918,7 @@ void dataChange()
 									}
 								}
 							}
-							cout << "Âû óñïåøíî èçìåíèëè äàííûå!" << endl;
+							cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 							system("pause");
 							reading.close();
 							record.close();
@@ -1926,13 +1926,13 @@ void dataChange()
 						}
 						else
 						{
-							cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 							system("Pause");
 						}
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 				}
@@ -1943,7 +1943,7 @@ void dataChange()
 					ifstream reading("Buffer.txt");
 					if (reading)
 					{
-						cout << "Âûáåðèòå íîìåð ãðóïïû: ";
+						cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						cin >> d;
 						system("cls");
 						string nazv;
@@ -1971,7 +1971,7 @@ void dataChange()
 									reading >> n;
 									if ((n == 0) && (j + 1 == b) && (r + 1 == c) && (p + 1 == d))
 									{
-										cout << "Äàííûõ äëÿ èçìåíåíèÿ áîëüøå íåò!" << endl;
+										cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã¨Ã§Ã¬Ã¥Ã­Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 										system("pause");
 										reading.close();
 										return void();
@@ -1997,10 +1997,10 @@ void dataChange()
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
-					cout << "\n1.Èçìåíèòü 2.Âûéòè\n";
+					cout << "\n1.ÃˆÃ§Ã¬Ã¥Ã­Ã¨Ã²Ã¼ 2.Ã‚Ã»Ã©Ã²Ã¨\n";
 					cin >> a;
 					if (a == 1)
 					{
@@ -2018,7 +2018,7 @@ void dataChange()
 								reading >> n;
 								reading.ignore();
 								int e;
-								cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå èçìåíèòü: ";
+								cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã²Ã¼: ";
 								cin >> e;
 								system("cls");
 								record << n << endl;
@@ -2055,7 +2055,7 @@ void dataChange()
 												{
 													if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == e))
 													{
-														cout << "Ââåäèòå íîâîå ÔÈÎ ñòóäåíòà: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 														while (cin.get() != '\n');
 														getline(cin, nazv);
 														record << nazv << endl;
@@ -2064,7 +2064,7 @@ void dataChange()
 														{
 															getline(reading, nazv);
 															record << nazv << endl;
-															cout << "Îöåíêà ïî ïðåäìåòó " << nazv << ": ";
+															cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 															cin >> ocen;
 															record << ocen << endl;
 															reading >> ocen;
@@ -2072,7 +2072,7 @@ void dataChange()
 															reading.ignore();
 															if (ocen != 0)
 															{
-																cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << nazv << ": ";
+																cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																cin >> ocen;
 																record << ocen << endl;
 															}
@@ -2137,7 +2137,7 @@ void dataChange()
 													{
 														if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == e))
 														{
-															cout << "Ââåäèòå íîâîå ÔÈÎ ñòóäåíòà: ";
+															cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 															while (cin.get() != '\n');
 															getline(cin, nazv);
 															record << nazv << endl;
@@ -2146,7 +2146,7 @@ void dataChange()
 															{
 																getline(reading, nazv);
 																record << nazv << endl;
-																cout << "Îöåíêà ïî ïðåäìåòó " << nazv << ": ";
+																cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																cin >> ocen;
 																record << ocen << endl;
 																reading >> ocen;
@@ -2154,7 +2154,7 @@ void dataChange()
 																reading.ignore();
 																if (ocen != 0)
 																{
-																	cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << nazv << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																	cin >> ocen;
 																	record << ocen << endl;
 																}
@@ -2210,7 +2210,7 @@ void dataChange()
 														{
 															if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == e))
 															{
-																cout << "Ââåäèòå íîâîå ÔÈÎ ñòóäåíòà: ";
+																cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 																while (cin.get() != '\n');
 																getline(cin, nazv);
 																record << nazv << endl;
@@ -2219,7 +2219,7 @@ void dataChange()
 																{
 																	getline(reading, nazv);
 																	record << nazv << endl;
-																	cout << "Îöåíêà ïî ïðåäìåòó " << nazv << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																	cin >> ocen;
 																	record << ocen << endl;
 																	reading >> ocen;
@@ -2227,7 +2227,7 @@ void dataChange()
 																	reading.ignore();
 																	if (ocen != 0)
 																	{
-																		cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << nazv << ": ";
+																		cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																		cin >> ocen;
 																		record << ocen << endl;
 																	}
@@ -2281,7 +2281,7 @@ void dataChange()
 															{
 																if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == e))
 																{
-																	cout << "Ââåäèòå íîâîå ÔÈÎ ñòóäåíòà: ";
+																	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 																	while (cin.get() != '\n');
 																	getline(cin, nazv);
 																	record << nazv << endl;
@@ -2290,7 +2290,7 @@ void dataChange()
 																	{
 																		getline(reading, nazv);
 																		record << nazv << endl;
-																		cout << "Îöåíêà ïî ïðåäìåòó " << nazv << ": ";
+																		cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																		cin >> ocen;
 																		record << ocen << endl;
 																		reading >> ocen;
@@ -2298,7 +2298,7 @@ void dataChange()
 																		reading.ignore();
 																		if (ocen != 0)
 																		{
-																			cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << nazv << ": ";
+																			cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																			cin >> ocen;
 																			record << ocen << endl;
 																		}
@@ -2328,7 +2328,7 @@ void dataChange()
 															{
 																if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == e))
 																{
-																	cout << "Ââåäèòå íîâîå ÔÈÎ ñòóäåíòà: ";
+																	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¢Ã®Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 																	while (cin.get() != '\n');
 																	getline(cin, nazv);
 																	record << nazv << endl;
@@ -2339,7 +2339,7 @@ void dataChange()
 																		{
 																			getline(reading, nazv);
 																			record << nazv << endl;
-																			cout << "Îöåíêà ïî ïðåäìåòó " << nazv << ": ";
+																			cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																			cin >> ocen;
 																			record << ocen << endl;
 																			reading >> ocen;
@@ -2347,7 +2347,7 @@ void dataChange()
 																			reading.ignore();
 																			if (ocen != 0)
 																			{
-																				cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << nazv << ": ";
+																				cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																				cin >> ocen;
 																				record << ocen << endl;
 																			}
@@ -2360,7 +2360,7 @@ void dataChange()
 																		{
 																			getline(reading, nazv);
 																			record << nazv << endl;
-																			cout << "Îöåíêà ïî ïðåäìåòó " << nazv << ": ";
+																			cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																			cin >> ocen;
 																			record << ocen << endl;
 																			reading >> ocen;
@@ -2368,7 +2368,7 @@ void dataChange()
 																			reading.ignore();
 																			if (ocen != 0)
 																			{
-																				cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << nazv << ": ";
+																				cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << nazv << ": ";
 																				cin >> ocen;
 																				record << ocen;
 																			}
@@ -2415,7 +2415,7 @@ void dataChange()
 										}
 									}
 								}
-								cout << "Âû óñïåøíî èçìåíèëè äàííûå!" << endl;
+								cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 								system("pause");
 								reading.close();
 								record.close();
@@ -2423,13 +2423,13 @@ void dataChange()
 							}
 							else
 							{
-								cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+								cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 								system("Pause");
 							}
 						}
 						else
 						{
-							cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 							system("Pause");
 						}
 					}
@@ -2440,28 +2440,28 @@ void dataChange()
 				}
 				else
 				{
-					cout << "Îøèáêà ââîäà!" << endl;
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 					system("pause");
 					return void();
 				}
 			}
 			else
 			{
-			cout << "Îøèáêà ââîäà!" << endl;
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 			system("pause");
 			return void();
 			}
 		}
 		else
 		{
-		cout << "Îøèáêà ââîäà!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 		system("pause");
 		return void();
 		}
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 		system("Pause");
 	}
 }
@@ -2691,13 +2691,13 @@ void Copy()
 		}
 		else
 		{
-			cout << "Îøèáêà îòêðûòèÿ âòîðîãî áóôåðíîãî ôàéëà!";
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¢Ã²Ã®Ã°Ã®Ã£Ã® Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !";
 			system("pause");
 		}
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !";
 		system("pause");
 	}
 	record.close();
@@ -2708,13 +2708,13 @@ void dataDelete()
 	system("cls");
 	if (fileVoid("Buffer.txt"))
 	{
-		cout << "Áóôåð ïóñò!" << endl;
+		cout << "ÃÃ³Ã´Ã¥Ã° Ã¯Ã³Ã±Ã²!" << endl;
 		system("pause");
 		return void();
 	}
 	if (AmountOfData() == 0)
 	{
-		cout << "Äàííûõ äëÿ óäàëåíèÿ áîëüøå íåò!" << endl;
+		cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 		system("pause");
 		return void();
 	}
@@ -2762,14 +2762,14 @@ void dataDelete()
 			}
 		}
 		int a;
-		cout << "\n1.Âûáðàòü èíñòèòóò äëÿ óäàëåíèÿ 2.Äàëåå\n";
+		cout << "\n1.Ã‚Ã»Ã¡Ã°Ã Ã²Ã¼ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã² Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 		cin >> a;
 		if (a == 1)
 		{
 			if (AmountOfData() == 1)
 			{
 				int a;
-				cout << "Â áóôåðå òîëüêî îäèí èíñòèòóò. Õîòèòå óäàëèòü åãî?\n1.Äà 2.Íåò\n";
+				cout << "Ã‚ Ã¡Ã³Ã´Ã¥Ã°Ã¥ Ã²Ã®Ã«Ã¼ÃªÃ® Ã®Ã¤Ã¨Ã­ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã². Ã•Ã®Ã²Ã¨Ã²Ã¥ Ã³Ã¤Ã Ã«Ã¨Ã²Ã¼ Ã¥Ã£Ã®?\n1.Ã„Ã  2.ÃÃ¥Ã²\n";
 				cin >> a;
 				if (a == 1)
 				{
@@ -2787,7 +2787,7 @@ void dataDelete()
 				{
 					while (a > 2 || a < 1)
 					{
-						cout << "Îøèáêà ââîäà!";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 						cin >> a;
 					}
 					if (a == 2)
@@ -2819,7 +2819,7 @@ void dataDelete()
 					int b = n;
 					reading.ignore();
 					int _n;
-					cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå óäàëèòü: ";
+					cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã³Ã¤Ã Ã«Ã¨Ã²Ã¼: ";
 					cin >> _n;
 					_n--;
 					system("cls");
@@ -3237,12 +3237,12 @@ void dataDelete()
 								
 							}
 						}
-						cout << "Âû óñïåøíî èçìåíèëè äàííûå!" << endl;
+						cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¨Ã§Ã¬Ã¥Ã­Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 						system("pause");
 					}
 					else
 					{
-						cout << "Ýëåìåíòà ñ òàêèì íîìåðîì íå ñóùåñòâóåò!" << endl;
+						cout << "ÃÃ«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã± Ã²Ã ÃªÃ¨Ã¬ Ã­Ã®Ã¬Ã¥Ã°Ã®Ã¬ Ã­Ã¥ Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã³Ã¥Ã²!" << endl;
 						system("Pause");
 						return void();
 					}
@@ -3253,13 +3253,13 @@ void dataDelete()
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 			}
 			else
 			{
-				cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 				system("Pause");
 			}
 		}
@@ -3270,7 +3270,7 @@ void dataDelete()
 			ifstream reading("Buffer.txt");
 			if (reading)
 			{
-				cout << "Âûáåðèòå íîìåð èíñòèòóòà: ";
+				cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 				cin >> b;
 				system("cls");
 				string nazv;
@@ -3286,7 +3286,7 @@ void dataDelete()
 					reading.ignore();
 					if ((n == 0) && (j + 1 == b))
 					{
-						cout<<"Äàííûõ äëÿ óäàëåíèÿ áîëüøå íåò!" << endl;
+						cout<<"Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 						system("pause");
 						reading.close();
 						return void();
@@ -3326,10 +3326,10 @@ void dataDelete()
 			else
 			{
 				b = -1;
-				cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 				system("Pause");
 			}
-			cout << "\n1.Âûáðàòü êàôåäðó äëÿ óäàëåíèÿ 2.Äàëåå\n";
+			cout << "\n1.Ã‚Ã»Ã¡Ã°Ã Ã²Ã¼ ÃªÃ Ã´Ã¥Ã¤Ã°Ã³ Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 			cin >> a;
 			if (a == 1)
 			{
@@ -3348,7 +3348,7 @@ void dataDelete()
 						int bo = n;
 						reading.ignore();
 						int l;
-						cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå óäàëèòü: ";
+						cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã³Ã¤Ã Ã«Ã¨Ã²Ã¼: ";
 						cin >> l;
 						system("cls");
 						record << n << endl;
@@ -3751,7 +3751,7 @@ void dataDelete()
 								}
 							}	
 						}
-						cout << "Âû óñïåøíî óäàëèëè äàííûå!" << endl;
+						cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã³Ã¤Ã Ã«Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 						system("pause");					
 						reading.close();
 						record.close();
@@ -3759,13 +3759,13 @@ void dataDelete()
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 			}
@@ -3776,7 +3776,7 @@ void dataDelete()
 				ifstream reading("Buffer.txt");
 				if (reading)
 				{
-					cout << "Âûáåðèòå íîìåð êàôåäðû: ";
+					cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 					cin >> c;
 					system("cls");
 					string nazv;
@@ -3797,7 +3797,7 @@ void dataDelete()
 							reading >> n;
 							if ((n == 0) && (j + 1 == b) && (r + 1 == c))
 							{
-								cout << "Äàííûõ äëÿ óäàëåíèÿ áîëüøå íåò!" << endl;
+								cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 								system("pause");
 								reading.close();
 								return void();
@@ -3831,10 +3831,10 @@ void dataDelete()
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
-				cout << "\n1.Âûáðàòü ãðóïïó äëÿ óäàëåíèÿ 2.Äàëåå\n";
+				cout << "\n1.Ã‚Ã»Ã¡Ã°Ã Ã²Ã¼ Ã£Ã°Ã³Ã¯Ã¯Ã³ Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 				cin >> a;
 				if (a == 1)
 				{
@@ -3853,7 +3853,7 @@ void dataDelete()
 							int bo = n;
 							reading.ignore();
 							int t;
-							cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå óäàëèòü: ";
+							cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã³Ã¤Ã Ã«Ã¨Ã²Ã¼: ";
 							cin >> t;
 							system("cls");
 							record << n << endl;
@@ -4232,7 +4232,7 @@ void dataDelete()
 									}
 								}
 							}
-							cout << "Âû óñïåøíî óäàëèëè äàííûå!" << endl;
+							cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã³Ã¤Ã Ã«Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 							system("pause");
 							reading.close();
 							record.close();
@@ -4240,13 +4240,13 @@ void dataDelete()
 						}
 						else
 						{
-							cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 							system("Pause");
 						}
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 				}
@@ -4257,7 +4257,7 @@ void dataDelete()
 					ifstream reading("Buffer.txt");
 					if (reading)
 					{
-						cout << "Âûáåðèòå íîìåð ãðóïïû: ";
+						cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						cin >> d;
 						system("cls");
 						string nazv;
@@ -4285,7 +4285,7 @@ void dataDelete()
 									reading >> n;
 									if ((n == 0) && (j + 1 == b) && (r + 1 == c) && (p + 1 == d))
 									{
-										cout << "Äàííûõ äëÿ óäàëåíèÿ áîëüøå íåò!" << endl;
+										cout << "Ã„Ã Ã­Ã­Ã»Ãµ Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã­Ã¥Ã²!" << endl;
 										system("pause");
 										reading.close();
 										return void();
@@ -4312,10 +4312,10 @@ void dataDelete()
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
-					cout << "1.Âûáðàòü ñòóäåíòà äëÿ óäàëåíèÿ 2.Âûéòè\n";
+					cout << "1.Ã‚Ã»Ã¡Ã°Ã Ã²Ã¼ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã  Ã¤Ã«Ã¿ Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¿ 2.Ã‚Ã»Ã©Ã²Ã¨\n";
 					cin >> a;
 					if (a == 1)
 					{
@@ -4334,7 +4334,7 @@ void dataDelete()
 								int bo = n;
 								reading.ignore();
 								int y;
-								cout << "Âûáåðèòå íîìåð ýëåìåíòà, êîòîðûé õîòèòå óäàëèòü: ";
+								cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã³Ã¤Ã Ã«Ã¨Ã²Ã¼: ";
 								cin >> y;
 								system("cls");
 								record << n << endl;
@@ -4668,7 +4668,7 @@ void dataDelete()
 										}
 									}
 								}
-								cout << "Âû óñïåøíî óäàëèëè äàííûå!" << endl;
+								cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã³Ã¤Ã Ã«Ã¨Ã«Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 								system("pause");
 								reading.close();
 								record.close();
@@ -4676,13 +4676,13 @@ void dataDelete()
 							}
 							else
 							{
-								cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+								cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 								system("Pause");
 							}
 						}
 						else
 						{
-							cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 							system("Pause");
 						}
 					}
@@ -4693,28 +4693,28 @@ void dataDelete()
 				}
 				else
 				{
-					cout << "Îøèáêà ââîäà!" << endl;
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 					system("pause");
 					return void();
 				}
 			}
 			else
 			{
-				cout << "Îøèáêà ââîäà!" << endl;
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 				system("pause");
 				return void();
 			}
 		}
 		else
 		{
-			cout << "Îøèáêà ââîäà!" << endl;
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 			system("pause");
 			return void();
 		}
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 		system("Pause");
 	}
 }
@@ -4723,34 +4723,34 @@ void dataAdd()
 	system("cls");
 	if (fileVoid("Buffer.txt"))
 	{
-		cout << "Áóôåð ïóñò!" << endl;
+		cout << "ÃÃ³Ã´Ã¥Ã° Ã¯Ã³Ã±Ã²!" << endl;
 		system("pause");
 		return void();
 	}
 	if (AmountOfData() == 0)
 	{
 		int a;
-		cout << "Â áàçå äàííûõ íåò íè îäíîãî èíñòèòóòà\n1.Äîáàâèòü 2.Âûéòè" << endl;
+		cout << "Ã‚ Ã¡Ã Ã§Ã¥ Ã¤Ã Ã­Ã­Ã»Ãµ Ã­Ã¥Ã² Ã­Ã¨ Ã®Ã¤Ã­Ã®Ã£Ã® Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã \n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ 2.Ã‚Ã»Ã©Ã²Ã¨" << endl;
 		cin >> a;
 		if (a == 1)
 		{
 			string nazv;
 			ofstream record("Buffer.txt", ios::out);
 			record << 1 << endl;
-			cout << "Ââåäèòå íàçâàíèå èíñòèòóòà: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 			while (cin.get() != '\n');
 			getline(cin, nazv);
 			record << nazv<<endl;
 			record << 0;
 			record.close();
-			cout << "Âû óñïåøíî äîáàâèëè èíñòèóòóò!";
+			cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã«Ã¨ Ã¨Ã­Ã±Ã²Ã¨Ã³Ã²Ã³Ã²!";
 			return void();
 		}
 		else if (a==2)
 			return void();
 		else
 		{
-			cout << "Îøèáêà ââîäà!";
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 			system("pause");
 			return void();
 		}
@@ -4799,7 +4799,7 @@ void dataAdd()
 			}
 		}
 		int a;
-		cout << "\n1.Äîáàâèòü èíñòèòóò 2.Äàëåå\n";
+		cout << "\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã² 2.Ã„Ã Ã«Ã¥Ã¥\n";
 		cin >> a;
 		if (a == 1)
 		{
@@ -4819,7 +4819,7 @@ void dataAdd()
 					reading.ignore();
 					system("cls");
 					record << n+1 << endl;
-					cout << "Ââåäèòå íàçâàíèå èíñòèòóòà: ";
+					cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 					while (cin.get() != '\n');
 					getline(cin, inst);
 					for (int i = 0; i < n; i++)
@@ -5033,7 +5033,7 @@ void dataAdd()
 							record << 0;
 						}
 					}
-					cout <<"Âû óñïåøíî äîáàâèëè èíñòèòóò!\n";
+					cout <<"Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã«Ã¨ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²!\n";
 					system("pause");
 					reading.close();
 					record.close();
@@ -5041,13 +5041,13 @@ void dataAdd()
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 			}
 			else
 			{
-				cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 				system("Pause");
 			}
 		}
@@ -5059,7 +5059,7 @@ void dataAdd()
 			ifstream reading("Buffer.txt");
 			if (reading)
 			{
-				cout << "Âûáåðèòå íîìåð èíñòèòóòà: ";
+				cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã : ";
 				cin >> b;
 				system("cls");
 				string nazv;
@@ -5111,14 +5111,14 @@ void dataAdd()
 			}
 			else
 			{
-				cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 				system("Pause");
 			}
 			if (pi == 0)
 			{
 				int vopr;
 				system("cls");
-				cout << "Â èíñòèòóòå íåò êàôåäð\n1.Äîáàâèòü 2.Âûéòè\n";
+				cout << "Ã‚ Ã¨Ã­Ã±Ã²Ã¨Ã²Ã³Ã²Ã¥ Ã­Ã¥Ã² ÃªÃ Ã´Ã¥Ã¤Ã°\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ 2.Ã‚Ã»Ã©Ã²Ã¨\n";
 				cin >> vopr;
 				if (vopr == 2)
 				{
@@ -5127,7 +5127,7 @@ void dataAdd()
 				}
 				else if (vopr != 1)
 				{
-					cout << "Îøèáêà ââîäà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !\n";
 					system("pause");
 					reading.close();
 					return void();
@@ -5137,12 +5137,12 @@ void dataAdd()
 			}
 			else if (pi == 1)
 			{
-				cout << "\n1.Äîáàâèòü êàôåäðó 2.Äàëåå\n";
+				cout << "\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ ÃªÃ Ã´Ã¥Ã¤Ã°Ã³ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 				cin >> a;
 			}
 			else
 			{
-				cout << "Îøèáêà!!!";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ !!!";
 				system("pause");
 				return void();
 			}
@@ -5217,7 +5217,7 @@ void dataAdd()
 								if (j + 1 == b)
 								{
 									string kaf;
-									cout << "Ââåäèòå íàçâàíèå êàôåäðû: ";
+									cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 									while (cin.get() != '\n');
 									getline(cin, kaf);
 									record << kaf << endl;
@@ -5235,7 +5235,7 @@ void dataAdd()
 								{
 									record << n + 1 << endl;
 									string kaf;
-									cout << "Ââåäèòå íàçâàíèå êàôåäðû: ";
+									cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 									while (cin.get() != '\n');
 									getline(cin, kaf);
 									record << kaf << endl;
@@ -5402,7 +5402,7 @@ void dataAdd()
 										if (j + 1 == b)
 										{
 											string kaf;
-											cout << "Ââåäèòå íàçâàíèå êàôåäðû: ";
+											cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 											while (cin.get() != '\n');
 											getline(cin, kaf);
 											record << endl<<kaf << endl;
@@ -5412,7 +5412,7 @@ void dataAdd()
 								}
 							}
 						}
-						cout << "Âû óñïåøíî äîáàâèëè êàôåäðó!" << endl;
+						cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã«Ã¨ ÃªÃ Ã´Ã¥Ã¤Ã°Ã³!" << endl;
 						system("pause");
 						reading.close();
 						record.close();
@@ -5420,13 +5420,13 @@ void dataAdd()
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 			}
@@ -5437,7 +5437,7 @@ void dataAdd()
 				ifstream reading("Buffer.txt");
 				if (reading)
 				{
-					cout << "Âûáåðèòå íîìåð êàôåäðû: ";
+					cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° ÃªÃ Ã´Ã¥Ã¤Ã°Ã»: ";
 					cin >> c;
 					system("cls");
 					string nazv;
@@ -5488,14 +5488,14 @@ void dataAdd()
 				}
 				else
 				{
-					cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 					system("Pause");
 				}
 				if (pi == 0)
 				{
 					int vopr;
 					system("cls");
-					cout << "Â êàôåäðå íåò ãðóïï\n1.Äîáàâèòü 2.Âûéòè\n";
+					cout << "Ã‚ ÃªÃ Ã´Ã¥Ã¤Ã°Ã¥ Ã­Ã¥Ã² Ã£Ã°Ã³Ã¯Ã¯\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ 2.Ã‚Ã»Ã©Ã²Ã¨\n";
 					cin >> vopr;
 					if (vopr == 2)
 					{
@@ -5504,7 +5504,7 @@ void dataAdd()
 					}
 					else if (vopr != 1)
 					{
-						cout << "Îøèáêà ââîäà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !\n";
 						system("pause");
 						reading.close();
 						return void();
@@ -5514,12 +5514,12 @@ void dataAdd()
 				}
 				else if (pi == 1)
 				{
-					cout << "\n1.Äîáàâèòü ãðóïïó 2.Äàëåå\n";
+					cout << "\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã£Ã°Ã³Ã¯Ã¯Ã³ 2.Ã„Ã Ã«Ã¥Ã¥\n";
 					cin >> a;
 				}
 				else
 				{
-				cout << "Îøèáêà!!!";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ !!!";
 				system("pause");
 				return void();
 				}
@@ -5594,10 +5594,10 @@ void dataAdd()
 										{
 											int kol;
 											string gr;
-											cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+											cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 											while (cin.get() != '\n');
 											getline(cin, gr);
-											cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ãðóïïû: ";
+											cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 											cin >> kol;
 											record << gr << endl;
 											record << 0 << endl;
@@ -5662,10 +5662,10 @@ void dataAdd()
 											{
 												int kol;
 												string gr;
-												cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+												cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 												while (cin.get() != '\n');
 												getline(cin, gr);
-												cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ãðóïïû: ";
+												cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 												cin >> kol;
 												record << gr << endl;
 												record << 0 << endl;
@@ -5684,10 +5684,10 @@ void dataAdd()
 												record << n + 1 << endl;
 												int kol;
 												string gr;
-												cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+												cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 												while (cin.get() != '\n');
 												getline(cin, gr);
-												cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ãðóïïû: ";
+												cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 												cin >> kol;
 												record << gr << endl;
 												record << 0 << endl;
@@ -5804,10 +5804,10 @@ void dataAdd()
 													{
 														int kol;
 														string gr;
-														cout << "Ââåäèòå íàçâàíèå ãðóïïû: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 														while (cin.get() != '\n');
 														getline(cin, gr);
-														cout << "Ââåäèòå êîëëè÷åñòâî ïðåäìåòîâ ó ãðóïïû: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢ Ã³ Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 														cin >> kol;
 														record << endl << gr << endl;
 														record << 0 << endl;
@@ -5819,7 +5819,7 @@ void dataAdd()
 									}
 								}
 							}
-							cout << "Âû óñïåøíî äîáàâèëè ãðóïïó!" << endl;
+							cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã«Ã¨ Ã£Ã°Ã³Ã¯Ã¯Ã³!" << endl;
 							system("pause");
 							reading.close();
 							record.close();
@@ -5827,13 +5827,13 @@ void dataAdd()
 						}
 						else
 						{
-							cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 							system("Pause");
 						}
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 				}
@@ -5844,7 +5844,7 @@ void dataAdd()
 					ifstream reading("Buffer.txt");
 					if (reading)
 					{
-						cout << "Âûáåðèòå íîìåð ãðóïïû: ";
+						cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° Ã£Ã°Ã³Ã¯Ã¯Ã»: ";
 						cin >> d;
 						system("cls");
 						string nazv;
@@ -5895,14 +5895,14 @@ void dataAdd()
 					}
 					else
 					{
-						cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 						system("Pause");
 					}
 					if (pi == 0)
 					{
 						int vopr;
 						system("cls");
-						cout << "Â ãðóïïå íåò ñòóäåíòîâ\n1.Äîáàâèòü 2.Âûéòè\n";
+						cout << "Ã‚ Ã£Ã°Ã³Ã¯Ã¯Ã¥ Ã­Ã¥Ã² Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã®Ã¢\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ 2.Ã‚Ã»Ã©Ã²Ã¨\n";
 						cin >> vopr;
 						if (vopr == 2)
 						{
@@ -5911,26 +5911,26 @@ void dataAdd()
 						}
 						else if (vopr != 1)
 						{
-							cout << "Îøèáêà ââîäà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !\n";
 							system("pause");
 							reading.close();
 							return void();
 						}
 						else
 						{
-							cout << "Çàïîëíèòå ñïèñîê ïðåäìåòîâ, ïîæàëóéñòà\n\n";
+							cout << "Ã‡Ã Ã¯Ã®Ã«Ã­Ã¨Ã²Ã¥ Ã±Ã¯Ã¨Ã±Ã®Ãª Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã®Ã¢, Ã¯Ã®Ã¦Ã Ã«Ã³Ã©Ã±Ã²Ã \n\n";
 							system("pause");
 							a = 1;
 						}
 					}
 					else if (pi==1)
 					{
-						cout << "\n1.Äîáàâèòü ñòóäåíòà 2.âûéòè\n";
+						cout << "\n1.Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã  2.Ã¢Ã»Ã©Ã²Ã¨\n";
 						cin >> a;
 					}
 					else
 					{
-						cout << "Îøèáêà!!!";
+						cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ !!!";
 						system("pause");
 						return void();
 					}
@@ -5988,31 +5988,31 @@ void dataAdd()
 													{
 														int a;
 														string pred;
-														cout << "Ââåäèòå íàçâàíèå ïðåäìåòà: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã : ";
 														while (cin.get() != '\n');
 														getline(cin, pred);
 														predm[i] = pred;
-														cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+														cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 														cin >> a;
 														a--;
 														kurs[i] = a;
 													}
 													string fio;
-													cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+													cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 													while (cin.get() != '\n');
 													getline(cin, fio);
 													record << fio << endl;
 													for (int i = 0; i < m; i++)
 													{
 														int ocen;
-														cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+														cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 														record << predm[i] << endl;
 														cin >> ocen;
 														record << ocen << endl;
 														if (kurs[i] == 0)
 														{
 															int ocen;
-															cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+															cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 															cin >> ocen;
 															record << ocen << endl;
 														}
@@ -6059,21 +6059,21 @@ void dataAdd()
 													if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == n))
 													{
 														string fio;
-														cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 														while (cin.get() != '\n');
 														getline(cin, fio);
 														record << fio << endl;
 														for (int i = 0; i < m; i++)
 														{
 															int ocen;
-															cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+															cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 															record << predm[i] << endl;
 															cin >> ocen;
 															record << ocen << endl;
 															if (kurs[i] !=0)
 															{
 																int ocen;
-																cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																cin >> ocen;
 																record << ocen << endl;
 															}
@@ -6132,31 +6132,31 @@ void dataAdd()
 														{
 															int a;
 															string pred;
-															cout << "Ââåäèòå íàçâàíèå ïðåäìåòà: ";
+															cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã : ";
 															while (cin.get() != '\n');
 															getline(cin, pred);
 															predm[i] = pred;
-															cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+															cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 															cin >> a;
 															a--;
 															kurs[i] = a;
 														}
 														string fio;
-														cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+														cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 														while (cin.get() != '\n');
 														getline(cin, fio);
 														record << fio << endl;
 														for (int i = 0; i < m; i++)
 														{
 															int ocen;
-															cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+															cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 															record << predm[i] << endl;
 															cin >> ocen;
 															record << ocen << endl;
 															if (kurs[i] == 0)
 															{
 																int ocen;
-																cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																cin >> ocen;
 																record << ocen << endl;
 															}
@@ -6203,21 +6203,21 @@ void dataAdd()
 														if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == n))
 														{
 															string fio;
-															cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+															cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 															while (cin.get() != '\n');
 															getline(cin, fio);
 															record << fio << endl;
 															for (int i = 0; i < m; i++)
 															{
 																int ocen;
-																cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																record << predm[i] << endl;
 																cin >> ocen;
 																record << ocen << endl;
 																if (kurs[i] != 0)
 																{
 																	int ocen;
-																	cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																	cin >> ocen;
 																	record << ocen << endl;
 																}
@@ -6267,31 +6267,31 @@ void dataAdd()
 															{
 																int a;
 																string pred;
-																cout << "Ââåäèòå íàçâàíèå ïðåäìåòà: ";
+																cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã : ";
 																while (cin.get() != '\n');
 																getline(cin, pred);
 																predm[i] = pred;
-																cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+																cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 																cin >> a;
 																a--;
 																kurs[i] = a;
 															}
 															string fio;
-															cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+															cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 															while (cin.get() != '\n');
 															getline(cin, fio);
 															record << fio << endl;
 															for (int i = 0; i < m; i++)
 															{
 																int ocen;
-																cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																record << predm[i] << endl;
 																cin >> ocen;
 																record << ocen << endl;
 																if (kurs[i] == 0)
 																{
 																	int ocen;
-																	cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																	cin >> ocen;
 																	record << ocen << endl;
 																}
@@ -6338,21 +6338,21 @@ void dataAdd()
 															if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == n))
 															{
 																string fio;
-																cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+																cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 																while (cin.get() != '\n');
 																getline(cin, fio);
 																record << fio << endl;
 																for (int i = 0; i < m; i++)
 																{
 																	int ocen;
-																	cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																	record << predm[i] << endl;
 																	cin >> ocen;
 																	record << ocen << endl;
 																	if (kurs[i] != 0)
 																	{
 																		int ocen;
-																		cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																		cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																		cin >> ocen;
 																		record << ocen << endl;
 																	}
@@ -6388,17 +6388,17 @@ void dataAdd()
 															{
 																int a;
 																string pred;
-																cout << "Ââåäèòå íàçâàíèå ïðåäìåòà: ";
+																cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã : ";
 																while (cin.get() != '\n');
 																getline(cin, pred);
 																predm[i] = pred;
-																cout << "Åñòü ëè êóðñîâàÿ ïî ýòîìó ïðåäìåòó?\n1.Äà 2.Íåò ";
+																cout << "Ã…Ã±Ã²Ã¼ Ã«Ã¨ ÃªÃ³Ã°Ã±Ã®Ã¢Ã Ã¿ Ã¯Ã® Ã½Ã²Ã®Ã¬Ã³ Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³?\n1.Ã„Ã  2.ÃÃ¥Ã² ";
 																cin >> a;
 																a--;
 																kurs[i] = a;
 															}
 															string fio;
-															cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+															cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 															while (cin.get() != '\n');
 															getline(cin, fio);
 															record << fio << endl;
@@ -6407,14 +6407,14 @@ void dataAdd()
 																if (i < m - 1)
 																{
 																	int ocen;
-																	cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																	record << predm[i] << endl;
 																	cin >> ocen;
 																	record << ocen << endl;
 																	if (kurs[i] == 0)
 																	{
 																		int ocen;
-																		cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																		cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																		cin >> ocen;
 																		record << ocen << endl;
 																	}
@@ -6426,14 +6426,14 @@ void dataAdd()
 																else
 																{
 																	int ocen;
-																	cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																	cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																	record << predm[i] << endl;
 																	cin >> ocen;
 																	record << ocen << endl;
 																	if (kurs[i] == 0)
 																	{
 																		int ocen;
-																		cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																		cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																		cin >> ocen;
 																		record << ocen;
 																	}
@@ -6522,7 +6522,7 @@ void dataAdd()
 																		if ((j + 1 == b) && (r + 1 == c) && (p + 1 == d) && (o + 1 == n))
 																		{
 																			string fio;
-																			cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+																			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã”ÃˆÃŽ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 																			while (cin.get() != '\n');
 																			getline(cin, fio);
 																			record << endl << fio << endl;
@@ -6531,14 +6531,14 @@ void dataAdd()
 																				if (i < m - 1)
 																				{
 																					int ocen;
-																					cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																					cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																					record << predm[i] << endl;
 																					cin >> ocen;
 																					record << ocen << endl;
 																					if (kurs[i] != 0)
 																					{
 																						int ocen;
-																						cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																						cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																						cin >> ocen;
 																						record << ocen << endl;
 																					}
@@ -6550,14 +6550,14 @@ void dataAdd()
 																				else
 																				{
 																					int ocen;
-																					cout << "Îöåíêà ïî ïðåäìåòó " << predm[i] << ": ";
+																					cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																					record << predm[i] << endl;
 																					cin >> ocen;
 																					record << ocen << endl;
 																					if (kurs[i] != 0)
 																					{
 																						int ocen;
-																						cout << "Îöåíêà çà êóðñîâóþ ïî ïðåäìåòó " << predm[i] << ": ";
+																						cout << "ÃŽÃ¶Ã¥Ã­ÃªÃ  Ã§Ã  ÃªÃ³Ã°Ã±Ã®Ã¢Ã³Ã¾ Ã¯Ã® Ã¯Ã°Ã¥Ã¤Ã¬Ã¥Ã²Ã³ " << predm[i] << ": ";
 																						cin >> ocen;
 																						record << ocen;
 																					}
@@ -6583,7 +6583,7 @@ void dataAdd()
 										}
 									}
 								}
-								cout << "Âû óñïåøíî äîáàâèëè ñòóäåíòà!" << endl;
+								cout << "Ã‚Ã» Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã«Ã¨ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã !" << endl;
 								system("pause");
 								reading.close();
 								record.close();
@@ -6591,13 +6591,13 @@ void dataAdd()
 							}
 							else
 							{
-								cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+								cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 								system("Pause");
 							}
 						}
 						else
 						{
-							cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+							cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 							system("Pause");
 						}
 					}
@@ -6608,28 +6608,28 @@ void dataAdd()
 				}
 				else
 				{
-					cout << "Îøèáêà ââîäà!" << endl;
+					cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 					system("pause");
 					return void();
 				}
 			}
 			else
 			{
-				cout << "Îøèáêà ââîäà!" << endl;
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 				system("pause");
 				return void();
 			}
 		}
 		else
 		{
-			cout << "Îøèáêà ââîäà!" << endl;
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !" << endl;
 			system("pause");
 			return void();
 		}
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 		system("Pause");
 	}
 }
@@ -6643,7 +6643,7 @@ int AmountOfData()
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ ôàéëà!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !" << endl;
 		return -1;
 	}
 	_buff.close();
@@ -6654,13 +6654,13 @@ void dataSave()
 	system("cls");
 	if (fileVoid("Buffer.txt"))
 	{
-		cout << "Áóôåð ïóñò!" << endl;
+		cout << "ÃÃ³Ã´Ã¥Ã° Ã¯Ã³Ã±Ã²!" << endl;
 		system("pause");
 		return void();
 	}
 	ifstream reading("Buffer.txt");
 	string filename;
-	cout << "Ââåäèòå íàçâàíèå ôàéëà(áåç ðàçðåøåíèÿ .txt), â êîòîðûé âû õîòèòå ñîõðàíèòü äàííûå: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã´Ã Ã©Ã«Ã (Ã¡Ã¥Ã§ Ã°Ã Ã§Ã°Ã¥Ã¸Ã¥Ã­Ã¨Ã¿ .txt), Ã¢ ÃªÃ®Ã²Ã®Ã°Ã»Ã© Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã±Ã®ÃµÃ°Ã Ã­Ã¨Ã²Ã¼ Ã¤Ã Ã­Ã­Ã»Ã¥: ";
 	while (cin.get() != '\n');
 	getline(cin, filename);
 	string full;
@@ -6668,8 +6668,8 @@ void dataSave()
 	full = filename + txt;
 	while (FileIsExist(full))
 	{
-		cout << "Ôàéë ñ òàêèì íàçâàíèåì óæå ñóùåñòâóåò!\n";
-		cout << "Ïîæàëóéñòà, ââåäè äðóãîå èìÿ ôàéëà: ";
+		cout << "Ã”Ã Ã©Ã« Ã± Ã²Ã ÃªÃ¨Ã¬ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥Ã¬ Ã³Ã¦Ã¥ Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã³Ã¥Ã²!\n";
+		cout << "ÃÃ®Ã¦Ã Ã«Ã³Ã©Ã±Ã²Ã , Ã¢Ã¢Ã¥Ã¤Ã¨ Ã¤Ã°Ã³Ã£Ã®Ã¥ Ã¨Ã¬Ã¿ Ã´Ã Ã©Ã«Ã : ";
 		getline(cin, filename);
 		full = filename + txt;
 	}
@@ -6893,18 +6893,18 @@ void dataSave()
 					}
 				}
 			}
-			cout << "Äàííûå óñïåøíî ñîõðàíåíû â ôàéë " << full << endl;
+			cout << "Ã„Ã Ã­Ã­Ã»Ã¥ Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã±Ã®ÃµÃ°Ã Ã­Ã¥Ã­Ã» Ã¢ Ã´Ã Ã©Ã« " << full << endl;
 			system("pause");
 		}
 		else
 		{
-			cout << "Îøèáêà îòêðûòèÿ ôàéëà!\n";
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !\n";
 			system("Pause");
 		}
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 		system("Pause");
 	}
 	reading.close();
@@ -6915,7 +6915,7 @@ bool dataCleaning()
 	bool clear = false;
 	fstream _buf("Buffer.txt", ios::out);
 	if (!_buf)
-		cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !" << endl;
 	_buf.clear();
 	if (_buf.peek() == EOF)
 		clear = true;
@@ -6929,7 +6929,7 @@ void dataInitialization()
 	ofstream _buf("Buffer.txt");
 	if (!_buf)
 	{
-		cout << "\nÎøèáêà ñîçäàíèÿ áóôåðíîãî ôàéëà!!!" << endl;
+		cout << "\nÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã±Ã®Ã§Ã¤Ã Ã­Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !!!" << endl;
 		system("pause");
 	}
 	_buf.close();
@@ -6940,8 +6940,8 @@ void dataReading()
 	if (!fileVoid("Buffer.txt"))
 	{
 		int a;
-		cout << "Áàçà äàííûõ óæå çàãðóæåíà!" << endl;
-		cout << "1.Çàãðóçèòü äðóãóþ ÁÄ 2.Âûéòè" << endl;
+		cout << "ÃÃ Ã§Ã  Ã¤Ã Ã­Ã­Ã»Ãµ Ã³Ã¦Ã¥ Ã§Ã Ã£Ã°Ã³Ã¦Ã¥Ã­Ã !" << endl;
+		cout << "1.Ã‡Ã Ã£Ã°Ã³Ã§Ã¨Ã²Ã¼ Ã¤Ã°Ã³Ã£Ã³Ã¾ ÃÃ„ 2.Ã‚Ã»Ã©Ã²Ã¨" << endl;
 		cin >> a;
 		if (a == 1)
 		{
@@ -6958,7 +6958,7 @@ void dataReading()
 		{
 			while (a > 2 || a < 1)
 			{
-				cout << "Îøèáêà ââîäà!";
+				cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¢Ã¢Ã®Ã¤Ã !";
 				cin >> a;
 			}
 			if (a == 2)
@@ -6973,7 +6973,7 @@ void dataReading()
 		}
 	}
 	string filename;
-	cout << "Ââåäèòå íàçâàíèå ôàéëà(áåç ðàçðåøåíèÿ .txt) èç êîòîðîãî âû õîòèòå âçÿòü äàííûå: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã´Ã Ã©Ã«Ã (Ã¡Ã¥Ã§ Ã°Ã Ã§Ã°Ã¥Ã¸Ã¥Ã­Ã¨Ã¿ .txt) Ã¨Ã§ ÃªÃ®Ã²Ã®Ã°Ã®Ã£Ã® Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¢Ã§Ã¿Ã²Ã¼ Ã¤Ã Ã­Ã­Ã»Ã¥: ";
 	while (cin.get() != '\n');
 	getline(cin, filename);
 	string full;
@@ -6981,14 +6981,14 @@ void dataReading()
 	full = filename + txt;
 	if (!FileIsExist(full))
 	{
-		cout << "ÁÄ ñ òàêìè íàçâàíèåì íåò!" << endl;
+		cout << "ÃÃ„ Ã± Ã²Ã ÃªÃ¬Ã¨ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥Ã¬ Ã­Ã¥Ã²!" << endl;
 		system("pause");
 		return void();
 	}
 	ifstream reading(full);
 	if (fileVoid(full))
 	{
-		cout << "Ôàéë ïóñò!" << endl;
+		cout << "Ã”Ã Ã©Ã« Ã¯Ã³Ã±Ã²!" << endl;
 		system("pause");
 		return void();
 	}
@@ -7212,18 +7212,18 @@ void dataReading()
 					}
 				}
 			}
-			cout << "Äàííûå óñïåøíî ñ÷èòàíû èç ôàéëà " << full << endl;
+			cout << "Ã„Ã Ã­Ã­Ã»Ã¥ Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã±Ã·Ã¨Ã²Ã Ã­Ã» Ã¨Ã§ Ã´Ã Ã©Ã«Ã  " << full << endl;
 			system("pause");
 		}
 		else
 		{
-			cout << "Îøèáêà îòêðûòèÿ áóôåðíîãî ôàéëà!\n";
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã¡Ã³Ã´Ã¥Ã°Ã­Ã®Ã£Ã® Ã´Ã Ã©Ã«Ã !\n";
 			system("Pause");
 		}
 	}
 	else
 	{
-		cout << "Îøèáêà îòêðûòèÿ ôàéëà!\n";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !\n";
 		system("Pause");
 	}
 	reading.close();
@@ -7243,7 +7243,7 @@ bool fileVoid(string filename)
 	fstream file(filename);
 	if (!file.is_open())
 	{
-		cout << "Îøèáêà îòêðûòèÿ ôàéëà!\n";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !\n";
 		system("pause");
 		return true;
 	}
